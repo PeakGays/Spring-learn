@@ -1,11 +1,9 @@
-# Spring AOP 术语
-
 ## AOP Term
 ``Aspect``: A modularization of a concern that cuts across multiple classes. Transaction management is a good example of a crosscutting concern in enterprise Java applications. In Spring AOP, aspects are implemented by **using regular classes (the schema-based approach)** or **regular classes annotated with the @Aspect annotation** (the @AspectJ style).
 
-``Join point``: A point during the execution of a program, such as the execution of a method or the handling of an exception. In Spring AOP, a join point always represents a method execution.
+``Join point``: A point during the execution of a program, such as the execution of a method or the handling of an exception. **In Spring AOP, a join point always represents a method execution**. 
 
-``Advice``: Action taken by an aspect at a particular join point. Different types of advice include “around”, “before” and “after” advice. (Advice types are discussed later.) Many AOP frameworks, including Spring, model an advice as an interceptor and maintain a chain of interceptors around the join point.
+``Advice``: Action taken by an aspect at a particular join point. Different types of advice **include “around”, “before” and “after” advice**. (Advice types are discussed later.) Many AOP frameworks, including Spring, model an advice as an interceptor and maintain a chain of interceptors around the join point.
 
 ``Pointcut``: A predicate that matches join points. Advice is associated with a pointcut expression and runs at any join point matched by the pointcut (for example, the execution of a method with a certain name). The concept of join points as matched by pointcut expressions is central to AOP, and Spring uses the AspectJ pointcut expression language by default.
 
