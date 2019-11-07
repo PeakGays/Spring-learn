@@ -1,5 +1,5 @@
 ## AOP Term
-``Aspect``: A modularization of a concern that cuts across multiple classes. Transaction management is a good example of a crosscutting concern in enterprise Java applications. In Spring AOP, aspects are implemented by **using regular classes (the schema-based approach)** or **regular classes annotated with the @Aspect annotation** (the @AspectJ style).
+``Aspect``: A modularization of a concern that cuts across multiple classes. Transaction management is a good example of a crosscutting concern in enterprise Java applications. In Spring AOP, aspects are implemented by **using regular classes (the schema-based approach)** or **regular classes annotated with the @Aspect annotation** (the @AspectJ style). I think a aspect is combined with a Advise And a PointCut.
 
 ``Join point``: A point during the execution of a program, such as the execution of a method or the handling of an exception. **In Spring AOP, a join point always represents a method execution**. 
 
